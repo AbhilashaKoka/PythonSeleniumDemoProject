@@ -1,20 +1,38 @@
 from behave import given, when,then
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver=webdriver.Chrome()
+
+
 @given(u'User is on Landing Page')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Given User is on Landing Page')
+    driver.get("https://demoqa.com")
+    print(driver.title)
+    driver.implicitly_wait(1000)
+    driver.execute_script('window.scrollBy(0, 300)')
+    driver.find_element(By.XPATH,"//*[@class=\"category-cards\"]//following::div[@class=\"card-body\"]//h5[contains(text(),\"Elements\")]").click()
+    driver.find_element(By.XPATH,"//*[@class=\"accordion\"]//div[@class=\"element-group\"]//following::span[@class=\"text\" and contains(text(),\"Text Box\")]").click()
+
 
 
 @when(u'User enter details username, email, current address, permanent address')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When User enter details username, email, current address, permanent address')
+    driver.execute_script('window.scrollBy(0, 300)')
+    driver.find_element(By.XPATH,"//*[@id='userName']").send_keys("sita")
+    driver.find_element(By.XPATH,"//*[@id='userEmail']").send_keys("sita@gmail.com")
+    driver.find_element(By.XPATH,"//*[@id='currentAddress']").send_keys("adasffhlfhg")
+    driver.find_element(By.XPATH,"//*[@id='permanentAddress']").send_keys("adsfsfafshf")
+
+
 
 
 @when(u'Click on Submit')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: When Click on Submit')
+    driver.find_element(By.XPATH,"//*[@id='submit']").submit()
 
 
 @then(u'user should able to verify the detail on output area')
 def step_impl(context):
-    raise NotImplementedError(u'STEP: Then user should able to verify the detail on output area')
+    print("user is on verify page")
 
