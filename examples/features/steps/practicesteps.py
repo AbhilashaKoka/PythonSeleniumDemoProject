@@ -25,29 +25,29 @@ def step_impl(context):
     driver.find_element(By.XPATH,"//*[@id=\"lastName\"]").send_keys("Kumari",Keys.TAB)
     driver.find_element(By.XPATH,"//*[@id=\"userEmail\"]").send_keys("sitakumari@gmail.com",Keys.TAB)
     driver.execute_script('window.scrollBy(0, 300)')
-    radioButton=driver.find_element(By.XPATH,"//*[@id=\"genterWrapper\"]//following::label[contains(text(),\"Male\")]//preceding-sibling::input[@name=\"gender\"]")
-    if radioButton.is_selected():
+    radio_button=driver.find_element(By.XPATH,"//*[@id=\"genterWrapper\"]//following::label[contains(text(),\"Male\")]//preceding-sibling::input[@name=\"gender\"]")
+    if radio_button.is_selected():
         print("Radio Button is selected")
     else:
         ActionChains(driver) \
-            .move_to_element(radioButton) \
+            .move_to_element(radio_button) \
             .perform()
         time.sleep(60)
-        radioButton.send_keys(Keys.TAB)
+        radio_button.send_keys(Keys.TAB)
     driver.execute_script('window.scrollBy(0, 300)')
     driver.find_element(By.XPATH, "//*[@id=\"userNumber\"]").send_keys("9142343241",Keys.TAB)
     driver.find_element(By.XPATH, "//*[@id=\"dateOfBirthInput\"]").send_keys("28 JUN 1983",Keys.TAB, Keys.ENTER, Keys.TAB)
     driver.find_element(By.XPATH,"//div[@class=\"subjects-auto-complete__input\"]/input[@type=\"text\"]").send_keys("Computer Science",Keys.TAB, Keys.TAB)
     driver.execute_script('window.scrollBy(0, 300)')
-    hobbiesCheckBox=driver.find_element(By.XPATH,"//div[@id=\"hobbiesWrapper\"]//label[contains(text(),\"Reading\")]//preceding-sibling::input")
-    if hobbiesCheckBox.is_selected():
+    hobbies_check_box=driver.find_element(By.XPATH,"//div[@id=\"hobbiesWrapper\"]//label[contains(text(),\"Reading\")]//preceding-sibling::input")
+    if hobbies_check_box.is_selected():
         print("Is selected!!!")
         ActionChains(driver) \
-            .move_to_element(hobbiesCheckBox) \
+            .move_to_element(hobbies_check_box) \
             .perform()
         time.sleep(60)
     else:
-        hobbiesCheckBox.send_keys(Keys.TAB, Keys.TAB)
+        hobbies_check_box.send_keys(Keys.TAB, Keys.TAB)
     driver.find_element(By.XPATH,"//*[@id=\"uploadPicture\" and @type=\"file\"]").send_keys("D:\Users\akoka\Downloads\sampleFile.jpeg")
 
     driver.find_element(By.XPATH,"//textArea[@id=\"currentAddress\"]").send_keys("sadsaffhkfh","Keys.TAB")
@@ -65,12 +65,12 @@ def step_impl(context):
 
 @then(u'I am able to verify form details successfully')
 def step_impl(context):
-     modalBox=driver.find_elements(By.XPATH,"//*[@class=\"modal-dialog modal-lg\"]")
+     modal_box=driver.find_elements(By.XPATH,"//*[@class=\"modal-dialog modal-lg\"]")
      ActionChains(driver) \
-    .move_to_element(modalBox) \
+    .move_to_element(modal_box) \
     .perform()
-coloumn=driver.find_elements(By.XPATH,"//table[@class=\"table table-dark table-striped table-bordered table-hover\"]/tbody/tr")
-for rows in coloumn:
+column=driver.find_elements(By.XPATH, "//table[@class=\"table table-dark table-striped table-bordered table-hover\"]/tbody/tr")
+for rows in column:
      print( rows.driver.find_elements(By.XPATH,"td[1]").getAttribute("innerText"))
      print(rows.driver.find_elements(By.XPATH,"td[2]").getAttribute("innerText"))
 
