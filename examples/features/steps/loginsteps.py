@@ -1,3 +1,4 @@
+import time
 from behave import given, when,then
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -34,5 +35,11 @@ def step_impl(context):
 
 @then(u'user should able to verify the detail on output area')
 def step_impl(context):
-    print("user is on verify page")
+    time.sleep(10)
+    elements=driver.find_elements(By.XPATH,"//*[@id=\"output\"]//p")
+    for menu in elements:
+        print(menu.text)
+        print("user is on verify page")
+
+
 
