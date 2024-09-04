@@ -321,5 +321,73 @@ options:
   --tags-help           Show help for tag expressions.
   --version             Show version.
 ##############################################################################################################
+Unit Test
+#############################################################################################################
+(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\DemoPythonScript> python -m unittest unit1.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\DemoPythonScript> python -m unittest -v unit1.py
+test_isupper (unit1.TestStringMethods.test_isupper) ... ok
+test_split (unit1.TestStringMethods.test_split) ... ok
+test_upper (unit1.TestStringMethods.test_upper) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\DemoPythonScript>
+######################################################################################################################################
+(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\DemoPythonScript> python -m unittest -h
+usage: python.exe -m unittest [-h] [-v] [-q] [--locals] [--durations N] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [tests ...]
+
+positional arguments:
+  tests                a list of any number of test modules, classes and test methods.
+
+options:
+  -h, --help           show this help message and exit
+  -v, --verbose        Verbose output
+  -q, --quiet          Quiet output
+  --locals             Show local variables in tracebacks
+  --durations N        Show the N slowest test cases (N=0 for all)
+  -f, --failfast       Stop on first fail or error
+  -c, --catch          Catch Ctrl-C and display results so far
+  -b, --buffer         Buffer stdout and stderr during tests
+  -k TESTNAMEPATTERNS  Only run tests which match the given substring
+
+Examples:
+  python.exe -m unittest test_module               - run tests from test_module
+  python.exe -m unittest module.TestClass          - run tests from module.TestClass
+  python.exe -m unittest module.Class.test_method  - run specified test method
+  python.exe -m unittest path/to/test_file.py      - run tests from test_file.py
+
+usage: python.exe -m unittest discover [-h] [-v] [-q] [--locals] [--durations N] [-f] [-c] [-b] [-k TESTNAMEPATTERNS] [-s START] [-p PATTERN]
+                                       [-t TOP]
+
+options:
+  -h, --help            show this help message and exit
+  -v, --verbose         Verbose output
+  -q, --quiet           Quiet output
+  --locals              Show local variables in tracebacks
+  --durations N         Show the N slowest test cases (N=0 for all)
+  -f, --failfast        Stop on first fail or error
+  -c, --catch           Catch Ctrl-C and display results so far
+  -b, --buffer          Buffer stdout and stderr during tests
+  -k TESTNAMEPATTERNS   Only run tests which match the given substring
+  -s START, --start-directory START
+                        Directory to start discovery ('.' default)
+  -p PATTERN, --pattern PATTERN
+                        Pattern to match tests ('test*.py' default)
+  -t TOP, --top-level-directory TOP
+                        Top level directory of project (defaults to start directory)
+
+For test discovery all test modules must be importable from the top level directory of the project.
+(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\DemoPythonScript>
+###############################################################################################################
+
+
+
 
 

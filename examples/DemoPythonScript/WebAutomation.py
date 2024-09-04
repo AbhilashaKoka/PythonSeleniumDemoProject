@@ -1,14 +1,11 @@
 from selenium import webdriver
-
-from webdriver_manager.chrome import ChromeDriverManager
-
 from selenium.webdriver.common.by import By
+
 
 class WebAutomation:
 
     def __init__(self):
-
-        self.driver = webdriver.Chrome()
+         self.driver=webdriver.Chrome()
 
     #Add implicit wait for element to be found
 
