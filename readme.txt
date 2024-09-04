@@ -217,7 +217,13 @@ Steps are required in main directory
 There are multiple ways to layout the test
 TestGroup-feature, Steps
 #############################################################################################################
-Test are run through the command Line or through a shell script
+Test are run through the command Line or through a shell script-By running cmd on features folder
+single run
+(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\features> behave login.feature
+
+multiple run
+behave
+
 ############################################################################################################
 
 
