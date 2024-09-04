@@ -4,14 +4,18 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import logging as logger
 
-driver=webdriver.Chrome()
+
 username=str("sita")
 email=str("sita@gmail.com")
 curraddr=str("adasffhlfhg")
 peraddr=str("adsfsfafshf")
+options = webdriver.ChromeOptions()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(options)
 
 @given(u'User is on Landing Page')
 def step_impl(context):
+
     driver.get("https://demoqa.com")
     print(driver.title)
     driver.implicitly_wait(1000)
