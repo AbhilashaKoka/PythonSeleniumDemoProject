@@ -207,7 +207,6 @@ urllib3==2.2.2
 websocket-client==1.8.0
 wsproto==1.2.0
 #############################################################################################################
-
 BDD consist of
 #Steps,Step StepDefinitions
 Steps(Given, When, Then)-located in the features file
@@ -219,11 +218,21 @@ TestGroup-feature, Steps
 #############################################################################################################
 Test are run through the command Line or through a shell script-By running cmd on features folder
 single run
-(BDDVirtualEnvPy3) PS D:\Users\User\IdeaProjects\PythonSeleniumDemoProject\examples\features> behave login.feature
+(BDDVirtualEnvPy3) PS D:\Users\akoka\IdeaProjects\PythonSeleniumDemoProject\examples\features> behave login.feature
 
-multiple run
-behave
+DevTools listening on ws://127.0.0.1:62505/devtools/browser/0d81a0bb-db84-40d3-8781-6a2aa1e7278b
+Feature: Checking TestBox Functionality # login.feature:1
 
+  Scenario: Verify Textbox login with valid values                              # login.feature:4
+    Given User is on Landing Page                                               # steps/loginsteps.py:9
+    When User enter details username, email, current address, permanent address # steps/loginsteps.py:20
+    And Click on Submit                                                         # steps/loginsteps.py:31
+    Then user should able to verify the detail on output area                   # steps/loginsteps.py:36
+
+1 feature passed, 0 failed, 0 skipped
+1 scenario passed, 0 failed, 0 skipped
+4 steps passed, 0 failed, 0 skipped, 0 undefined
+Took 0m14.171s
 ############################################################################################################
 
 
