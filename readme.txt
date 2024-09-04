@@ -10,68 +10,7 @@ D:\Users\user\AppData\Local\Programs\Python\Python312\python.exe
 D:\Users\user\AppData\Local\Microsoft\WindowsApps\python.exe
 ###########################################################################################################################
 D:\Users\user>cd "D:\Users\user\AppData\Local\Programs\Python\Python312"
-#############################################################################################################################################################################
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3>virtualenv --python=D:\Users\user\AppData\Local\Programs\Python\Python312\python.exe venv_py3
-created virtual environment CPython3.12.3.final.0-64 in 9308ms
-  creator CPython3Windows(dest=D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\venv_py3, clear=False, no_vcs_ignore=False, global=False)
-  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=D:\Users\user\AppData\Local\pypa\virtualenv)
-    added seed packages: pip==24.1
-  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
-  ##############################################################################################################################################################
-  
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3>ls
-'ls' is not recognized as an internal or external command,
-operable program or batch file.
-
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3>dir
- Volume in drive D is Data
- Volume Serial Number is BABF-1589
-
- Directory of D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3
-
-03-09-2024  11:26    <DIR>          .
-03-09-2024  10:26    <DIR>          ..
-03-09-2024  10:36    <DIR>          Include
-03-09-2024  10:36    <DIR>          Lib
-03-09-2024  10:36               363 pyvenv.cfg
-03-09-2024  10:37    <DIR>          Scripts
-03-09-2024  11:26    <DIR>          venv_py3
-               1 File(s)            363 bytes
-               6 Dir(s)  221,936,181,248 bytes free
-
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3>cd Scripts
-
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts>dir
- Volume in drive D is Data
- Volume Serial Number is BABF-1589
-
- Directory of D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts
-
-03-09-2024  10:37    <DIR>          .
-03-09-2024  11:26    <DIR>          ..
-03-09-2024  10:37             2,186 activate
-03-09-2024  10:37             1,085 activate.bat
-03-09-2024  10:37            26,199 Activate.ps1
-03-09-2024  10:37               393 deactivate.bat
-03-09-2024  10:37           108,456 pip.exe
-03-09-2024  10:37           108,456 pip3.12.exe
-03-09-2024  10:37           108,456 pip3.exe
-03-09-2024  10:36           274,712 python.exe
-03-09-2024  10:36           263,448 pythonw.exe
-               9 File(s)        893,391 bytes
-               2 Dir(s)  221,936,160,768 bytes free
-
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts>activate.bat
-
-(BDDVirtualEnvForPython3) D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts>where python
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts\python.exe
-D:\Users\user\AppData\Local\Programs\Python\Python312\python.exe
-D:\Users\user\AppData\Local\Microsoft\WindowsApps\python.exe
-(BDDVirtualEnvForPython3) D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts>deactivate.bat
-D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvForPython3\Scripts>
 ##################################################################################################################################################
-
-
 D:\Users\user\AppData\Local\Programs\Python\Python312>virtualenv --python=D:\Users\user\AppData\Local\Programs\Python\Python312\python.exe BDDVirtualEnvPy3
 created virtual environment CPython3.12.3.final.0-64 in 4703ms
   creator CPython3Windows(dest=D:\Users\user\AppData\Local\Programs\Python\Python312\BDDVirtualEnvPy3, clear=False, no_vcs_ignore=False, global=False)
