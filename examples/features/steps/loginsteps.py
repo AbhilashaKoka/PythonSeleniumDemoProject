@@ -5,10 +5,10 @@ from selenium.webdriver.common.by import By
 import logging as logger
 
 driver=webdriver.Chrome()
-username="sita"
-email="sita@gmail.com"
-curraddr="adasffhlfhg"
-peraddr="adsfsfafshf"
+username=str("sita")
+email=str("sita@gmail.com")
+curraddr=str("adasffhlfhg")
+peraddr=str("adsfsfafshf")
 
 @given(u'User is on Landing Page')
 def step_impl(context):
