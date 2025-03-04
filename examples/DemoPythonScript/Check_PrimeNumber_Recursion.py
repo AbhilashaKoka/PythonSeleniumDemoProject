@@ -1,5 +1,4 @@
-from examples.DemoPythonScript.CheckPrimeNumber import num_to_check
-from examples.DemoPythonScript.PrimeNumberInRange import is_prime
+from examples.DemoPythonScript.Number.Calculate_is_strong_number import is_prime
 
 
 def is_Prime(number, divisor=None):
