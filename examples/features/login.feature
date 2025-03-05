@@ -1,6 +1,5 @@
 Feature: Checking TestBox Functionality
 
-
   Scenario: Verify Textbox login with valid values
     Given User is on Landing Page
     When User enter details username, email, current address, permanent address
